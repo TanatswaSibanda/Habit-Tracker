@@ -80,7 +80,8 @@ function App() {
         </p>
       </div>
 
-      <div className='barChart' style={{ width: "100%", height: "300px" }}>
+
+      <div className='barChart' >
 
         <h3>Habit Completion Chart</h3>
         <ResponsiveContainer width="100%" height={300}>
