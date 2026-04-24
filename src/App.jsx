@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Bar, BarChart, Tooltip, XAxis, YAxis, ResponsiveContainer } from "recharts"
+import "./App.css"
 
 function App() {
   const [habit, setHabit] = useState("") // this stores what user types
@@ -36,36 +37,33 @@ function App() {
     { name: "Not Completed", value: notCompletedCount }
   ]
   return (
-    <div>
+    <div className="container" >
       <h1 className='header'>DAILY HABIT TRACKER</h1>
       <div className='input'>
-        <input type="text" placeholder='Add Habit' value={habit} onChange={(e) => setHabit(e.target.value)} />
-        <button onClick={addHabit}>ADD</button>
+        <input type="text" placeholder='Something you want to improve' value={habit} onChange={(e) => setHabit(e.target.value)} />
+        <button onClick={addHabit}>Add Habit💗</button>
       </div>
 
 
-      <div className='list' >
+      <div className="list">
         <h3>Habits List</h3>
+
         {habits.map((h, index) => (
-          <div key={index} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          <div key={index} className="habit-item">
 
+            <span className="check">{h.completed ? "✔️" : ""}</span>
 
-            <span>{h.completed ? "✔️" : ""}</span>
-
-
-            <p style={{ textDecoration: h.completed ? "line-through" : "none" }}>
+            <p className={h.completed ? "text done" : "text"}>
               {h.text}
             </p>
 
-
             {!h.completed && (
-              <button onClick={() => completeHabit(index)}>
+              <button className="btn complete" onClick={() => completeHabit(index)}>
                 Complete
               </button>
             )}
 
-
-            <button onClick={() => deleteHabit(index)}>
+            <button className="btn delete" onClick={() => deleteHabit(index)}>
               Delete
             </button>
 
@@ -75,7 +73,7 @@ function App() {
 
       <div className='summary'>
         <h3>Progress Summary</h3>
-        <p>Completed: {completedCount}{" "}
+        <p>Completed : {completedCount}{" "} <br />
           Not Completed: {notCompletedCount}
         </p>
       </div>
