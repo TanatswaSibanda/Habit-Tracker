@@ -53,6 +53,8 @@ input {
 button {
   height: 40px;
   padding: 0 10px;
+  white-space: nowrap;
+  display: inline-flex;
   font-size: 16px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
