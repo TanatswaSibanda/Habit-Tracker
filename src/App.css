@@ -53,13 +53,13 @@ input {
 button {
   height: 40px;
   padding: 0 10px;
-  white-space: nowrap;
-  display: inline-flex;
   font-size: 16px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border: 1px solid #ffb6d2;
+  background-color: rgba(255, 182, 210, 0.285);
+  color: white;
   cursor: pointer
 }
 
