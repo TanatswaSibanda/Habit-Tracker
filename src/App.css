@@ -58,7 +58,7 @@ button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border: 1px solid #ffb6d2;
-  background-color: rgba(255, 182, 210, 0.285);
+  background-color: rgb(92, 92, 92);
   color: white;
   cursor: pointer
 }
