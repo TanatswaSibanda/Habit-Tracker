@@ -38,7 +38,7 @@ body,
 }
 
 input {
-  height: 30px;
+  height: 40px;
   padding: 0 10px;
   font-size: 18px;
   border-radius: 8px;
@@ -51,7 +51,7 @@ input {
 }
 
 button {
-  height: 30px;
+  height: 40px;
   padding: 0 10px;
   font-size: 18px;
   border-radius: 8px;
