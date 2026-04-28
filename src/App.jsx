@@ -41,7 +41,7 @@ function App() {
       <h1 className='header'>DAILY HABIT TRACKER</h1>
       <div className='input'>
         <input type="text" placeholder='Something you want to improve' value={habit} onChange={(e) => setHabit(e.target.value)} />
-        <button onClick={addHabit}>Add Habit💗</button>
+        <button onClick={addHabit}>Add Habit</button>
       </div>
 
 
