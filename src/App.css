@@ -32,14 +32,14 @@ body,
 .input {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 0;
 
 }
 
 input {
-  height: 40px;
-  padding: 10px;
+  height: 30px;
+  padding: 0 10px;
   font-size: 18px;
   border-radius: 8px;
   border: 1px solid #ffb6d2;
@@ -51,8 +51,8 @@ input {
 }
 
 button {
-  height: 40px;
-  padding: 10px;
+  height: 30px;
+  padding: 0 10px;
   font-size: 18px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
